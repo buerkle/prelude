@@ -144,10 +144,6 @@
 
 (recentf-mode +1)
 
-;; use shift + arrow keys to switch between visible buffers
-(require 'windmove)
-(windmove-default-keybindings)
-
 ;; automatically save buffers associated with files on buffer switch
 ;; and on windows switch
 (defun prelude-auto-save-command ()
@@ -170,7 +166,7 @@ The body of the advice is in BODY."
 
 ;; advise all window switching functions
 (advise-commands "auto-save"
-                 (switch-to-buffer other-window windmove-up windmove-down windmove-left windmove-right)
+                 (switch-to-buffer other-window)
                  before
                  (prelude-auto-save-command))
 

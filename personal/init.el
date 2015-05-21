@@ -1,0 +1,12 @@
+(global-flycheck-mode -1)
+(remove-hook 'prog-mode 'flycheck-mode)
+
+;;----------------------------------------------------------------------------
+;; Allow access from emacsclient
+;;----------------------------------------------------------------------------
+(require 'server)
+(unless (server-running-p)
+  (server-start))
+
+(electric-indent-mode 1)
+

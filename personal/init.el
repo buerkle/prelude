@@ -10,3 +10,4 @@
 
 (electric-indent-mode 1)
 
+(setq-default truncate-lines t)

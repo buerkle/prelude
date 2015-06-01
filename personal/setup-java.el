@@ -31,3 +31,7 @@
 (require 'company-emacs-eclim)
 (company-emacs-eclim-setup)
 (global-company-mode t)
+
+
+;; TODO: only apply to java mode
+(global-set-key (kbd "C-c o") 'eclim-java-import-organize)

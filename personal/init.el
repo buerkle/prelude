@@ -11,3 +11,5 @@
 (electric-indent-mode 1)
 
 (setq-default truncate-lines t)
+
+(add-hook 'before-save-hook 'delete-trailing-whitespace)

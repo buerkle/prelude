@@ -9,3 +9,6 @@
 (define-key prelude-mode-map "\C-cs" nil)
 (global-set-key (kbd "C-c s") 'comment-region)
 
+(define-key prelude-mode-map "\C-ct" nil)
+(global-set-key (kbd "C-c t") 'eclim-java-find-declaration)
+

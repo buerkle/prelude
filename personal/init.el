@@ -13,3 +13,10 @@
 (setq-default truncate-lines t)
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+(prelude-require-package '(yasnippet))
+(yas-global-mode 1)
+
+(define-key yas-minor-mode-map (kbd "<tab>") nil)
+(define-key yas-minor-mode-map (kbd "TAB") nil)
+(define-key yas-minor-mode-map (kbd "C-c h") 'yas-expand)

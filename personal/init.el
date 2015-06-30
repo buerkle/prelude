@@ -14,7 +14,7 @@
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
-(prelude-require-package '(yasnippet))
+(prelude-require-package 'yasnippet)
 (yas-global-mode 1)
 
 (define-key yas-minor-mode-map (kbd "<tab>") nil)
